@@ -5,7 +5,33 @@ body {
   margin: 0;
 }
 
-#header {
+#body.night {
+  background: black;
+}
+
+#content.night {
+  background: black;
+  color: rgb(242,242,247);  
+  -moz-transition:color .2s ease-in;
+  -o-transition:color .2s ease-in;
+  -webkit-transition:color .2s ease-in;
+  -moz-transition:background .2s ease-in;
+  -o-transition:background .2s ease-in;
+  -webkit-transition:background .2s ease-in;
+}
+
+#content.night {
+  background: black;
+  color: rgb(242,242,247);	
+  -moz-transition:color .2s ease-in;
+  -o-transition:color .2s ease-in;
+  -webkit-transition:color .2s ease-in;
+  -moz-transition:background .2s ease-in;
+  -o-transition:background .2s ease-in;
+  -webkit-transition:background .2s ease-in;
+}
+
+#header.day {
   -moz-transition:color .2s ease-in;
   -o-transition:color .2s ease-in;
   -webkit-transition:color .2s ease-in;
@@ -16,7 +42,18 @@ body {
   color: rgb(42,42,47);  
 }
 
-#interruttore {
+#header.night {
+  -moz-transition:color .2s ease-in;
+  -o-transition:color .2s ease-in;
+  -webkit-transition:color .2s ease-in;
+  -moz-transition:background .2s ease-in;
+  -o-transition:background .2s ease-in;
+  -webkit-transition:background .2s ease-in;
+  background: rgb(42,42,47);
+  color: rgb(250,250,250);  
+}
+
+#interruttore.day {
   -moz-transition:color .2s ease-in;
   -o-transition:color .2s ease-in;
   -webkit-transition:color .2s ease-in;
@@ -27,8 +64,44 @@ body {
   color: rgb(42,42,47);  
 }
 
-#titolo, #descrizione, #elenco, #citazione, #citazioneImportante, #galleriafoto {
+#interruttore.night {
+  -moz-transition:color .2s ease-in;
+  -o-transition:color .2s ease-in;
+  -webkit-transition:color .2s ease-in;
+  -moz-transition:background .2s ease-in;
+  -o-transition:background .2s ease-in;
+  -webkit-transition:background .2s ease-in;
+  background: rgb(42,42,47);
+  color: rgb(250,250,250);  
+}
+
+#titolo.day, #descrizione.day, #elenco.day, #citazione.day, #citazioneImportante.day, #galleriafoto.day {
+  -moz-transition:color .2s ease-in;
+  -o-transition:color .2s ease-in;
+  -webkit-transition:color .2s ease-in;
   color: rgb(42,42,47);
+}
+
+#titolo.night, #descrizione.night, #elenco.night, #citazione.night, #citazioneImportante.night, #galleriafoto.night {
+  -moz-transition:color .2s ease-in;
+  -o-transition:color .2s ease-in;
+  -webkit-transition:color .2s ease-in;
+  color: rgb(242,242,247);
+}
+
+#footer.night {
+  -moz-transition:color .2s ease-in;
+  -o-transition:color .2s ease-in;
+  -webkit-transition:color .2s ease-in;
+  -moz-transition:background .2s ease-in;
+  -o-transition:background .2s ease-in;
+  -webkit-transition:background .2s ease-in;
+  background: rgb(42,42,47);
+  color: rgb(250,250,250); 
+}
+
+.day {
+	
 }
 
 /* Header/Logo Title */

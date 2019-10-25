@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <!-- Creare 3 pagine web: Homepage, Chi siamo, Dove siamo, Cosa facciamo -->
 
@@ -10,7 +10,11 @@
     <script src="script.js"></script>
     <title>CPE SRL</title> 
   </head>
-    <body id="body" onload="">
+	<body id="body" onload="">
+    <div id="interruttore">
+      <button type="button" onclick="night()" class="btn" title="Night Shift"><img src="https://static.thenounproject.com/png/670445-200.png" width="20px"></button>
+      <button type="button" onclick="day()" class="btn" title="Day Shift"><img src="http://cdn.onlinewebfonts.com/svg/img_205637.png" width="20px"></button>
+    </div>
     <div id="header">
       <h1 id="intestazione">CPE SRL</h1>
       <p id="sottointestazione">Creatività Per L'Edilizia</p>
