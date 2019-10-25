@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<!-- Creare 3 pagine web: Homepage, Chi siamo, Dove siamo, Cosa facciamo -->
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="css_Style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="photos/favicon.png">
+    <script src="script.js"></script>
+    <title>CPE SRL</title> 
+  </head>
+    <body id="body" onload="">
+    <div id="header">
+      <h1 id="intestazione">CATALOGO</h1>
+      <p id="sottointestazione">Sfoglia il nostro catalogo e scegli il prodotto che fa al caso tuo</p>
+    </div>
+    <div id="menu">
+      <ul id="menu_nav">
+        <li id="menu_index"><a href="index.html">Home</a></li>
+        <li id="menu_index"><a href="dove-siamo.html">Dove siamo</a></li>
+        <li id="menu_index"><a id="active" href="catalogo.html">Catalogo</a></li>
+        <li id="menu_index"><a href="galleria.html">Galleria</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <h1 align="center">Scarica il catalogo</h1>
+      <center>
+          <a href="https://www.cpe-srl.it/catalogo-cpe.rar"><button class="btn" id="success" type="button" class="btn" title="Scarica il catalogo">Clicca qui per scaricare il file *.zip</button></a>
+      </center>
+      <p id="descrizione" align="center"></p>
+      <hr />
+      <h1 align="center">Clicca la foto per ingrandirla</h1>
+      <center>
+          <div class="gallery">
+            <a target="_blank" href="photos/catalogo1.jpg">
+              <img src="photos/catalogo1.jpg" alt="Copertina" width="600" height="400">
+            </a>
+            <div class="desc">Copertina</div>
+          </div>
+
+          <div class="gallery">
+            <a target="_blank" href="photos/catalogo2.jpg">
+              <img src="photos/catalogo2.jpg" alt="Pagina 2" width="600" height="400">
+            </a>
+            <div class="desc">Pagina 2</div>
+          </div>
+
+          <div class="gallery">
+            <a target="_blank" href="photos/catalogo3.jpg">
+              <img src="photos/catalogo3.jpg" alt="Pagina 3" width="600" height="400">
+            </a>
+            <div class="desc">Pagina 3</div>
+          </div>
+
+          <div class="gallery">
+            <a target="_blank" href="photos/catalogo5.jpg">
+              <img src="photos/catalogo5.jpg" alt="Pagina 4" width="600" height="400">
+            </a>
+            <div class="desc">Pagina 4</div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="photos/catalogo6.jpg">
+              <img src="photos/catalogo6.jpg" alt="Pagina 5" width="600" height="400">
+            </a>
+            <div class="desc">Pagina 5</div>
+          </div>
+          
+          <div class="gallery">
+            <a target="_blank" href="photos/catalogo7.jpg">
+              <img src="photos/catalogo7.jpg" alt="Pagina 6" width="600" height="400">
+            </a>
+            <div class="desc">Pagina 6</div>
+          </div>
+      </center>
+      <br />
+      <hr />
+      <ul id="elenco">
+      </ul>
+      <p id="citazione"></p>
+      <h1 id="titolo"></h1>
+    </div>   
+    <div id="footer">
+      <p>Tutti i diritti riservati a CPE SRL - Copyright 2019. Creato da Leonardo Cannarella.</p>
+    </div>
+  </body>
+</html>
