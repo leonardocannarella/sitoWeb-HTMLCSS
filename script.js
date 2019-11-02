@@ -1,4 +1,7 @@
 function day(){
+    var mode1 = "0";
+    localStorage.setItem("nightMode", mode1);
+
 	body.className='day';
     header.className='day';
     content.className='day';
@@ -15,6 +18,9 @@ function day(){
 }
 
 function night(){
+    var mode2 = "1";
+    localStorage.setItem("nightMode", mode2);
+
     body.className='night';
     header.className='night';
     content.className='night';
@@ -28,4 +34,49 @@ function night(){
     citazioneImportante2.className='night';
     galleriafoto.className='night';
     footer.className='night';
+}
+
+function name() {
+    var tempor = localStorage.getItem("nomeSalvato");
+
+    if (tempor==null){
+        var nome = prompt("Qual'è il tuo nome?");
+        while((nome==null)||(nome==""))
+        {
+            alert("Nome non valido!")
+            var nome = prompt("Qual'è il tuo nome?");
+            localStorage.clear();
+        }
+        localStorage.setItem("nomeSalvato", nome);
+        alert("Dati salvati con successo!\nCiao "+nome+"!");
+        mostraDati();
+    }
+    else
+    {
+        mostraDati();
+    }
+
+    
+}
+
+function mostraDati() {
+    var tempor = localStorage.getItem("nomeSalvato");
+    document.getElementById("sottointestazione").innerHTML = "Ciao "+tempor+"!";
+    activeMode();
+}
+
+function cancella() {
+    localStorage.clear();
+}
+
+function activeMode() {
+    var modeTemp = localStorage.getItem("nightMode");
+
+    if(modeTemp=="1"){
+        night();
+    }
+    else
+    {
+        day();
+    }
 }
