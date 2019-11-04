@@ -67,6 +67,8 @@ function mostraDati() {
 
 function cancella() {
     localStorage.clear();
+    alert("Tutti i cookie sono stati cancellati con successo!\nLa pagina verrà ricaricata automaticamente.");
+    window.location.reload();
 }
 
 function activeMode() {
