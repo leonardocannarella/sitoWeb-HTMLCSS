@@ -240,7 +240,7 @@ div.desc {
 .btn {
   border: none; /* Remove borders */
   color: white; /* Add a text color */
-  padding: 14px 20px; /* Add some padding */
+  padding: 10px 20px; /* Add some padding */
   cursor: pointer; /* Add a pointer cursor on mouse-over */
 }
 
