@@ -117,12 +117,12 @@ body {
 }
 
 #intestazione {
-  line-height: 20px;
-  font-size: 100px;
+  line-height: 50px;
+  font-size: 9vw;
 }
 
 #sottointestazione {
-  font-size: 40px;
+  font-size: 3vw;
 }
 
 #interruttore {
@@ -131,6 +131,7 @@ body {
 }
 
 #header {
+  padding: 2vw;
   text-align: center;
 }
 
@@ -262,6 +263,7 @@ div.desc {
 	-o-transition: all 1s ease;
 	-webkit-transition: all 1s ease;
 }
+
 .top
 {
 	display: flex;
@@ -272,6 +274,7 @@ div.desc {
 	margin-right: auto;
 	margin-bottom: 10vh;
 }
+
 .top ul
 {
 	list-style: none;
@@ -280,6 +283,7 @@ div.desc {
 	z-index: 1;
 	box-sizing: border-box;
 }
+
 .top ul li
 {
 	position: relative;
@@ -299,7 +303,7 @@ div.desc {
 	background-color: #000;
 	content: '';
 	color: white;
-	opacity: 0.4;
+	opacity: 0;
 	text-align: center;
 	box-sizing: border-box;
 	pointer-events: none;
